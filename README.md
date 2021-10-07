@@ -48,11 +48,11 @@ The raw data is contained in 5 JSON files formatted as follows:
     |     Column         | Value                                   | Description |
     |--------------------|-----------------------------------------|-------------|
     | project            | en.wikipedia                            | Represents the Wikimedia project we are viewing. In this case all data is from English Wikipedia.            |
-    | access/access-site | desktop, mobile, mobile-web, mobile-app |             |
-    | agent              | user                                    |             |
-    | granularity        | monthly                                 |             |
-    | timestamp          | YYYYMMDDHH                              |             |
-    | views/count        | integer                                 |             |
+    | access/access-site | desktop, mobile, mobile-web, mobile-app | The Pageview API refers to this as access with options of desktop, mobile-web, or mobile-app. The Pagecount API calls this access-site and the value is either desktop or mobile.             |
+    | agent              | user                                    | This flag is only present for the Pageview API. We have filtered to `user` as we are only focused on organic traffic data.            |
+    | granularity        | monthly                                 |  The data for each API call is bucketed monthly.           |
+    | timestamp          | YYYYMMDDHH                              |              |
+    | views/count        | integer                                 | The Pageview API uses `views` while the Pagecount API uses `count`, both represent the number of views in a given time period.             |
 
 
 ### Processed Data:
