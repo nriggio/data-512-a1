@@ -37,6 +37,15 @@ The raw & processed data is stored in the `data` directory (see Data header belo
 └── wiki_timeseries.png
 ```
 
+
+<!-- SPECIAL CONSIDERATIONS -->
+## Special Considerations:
+
+Note that the data from the Pageview API is filtered to only include `user` data (i.e. eliminating "inorganic" traffic from spiders/crawlers). This option does not exist for the Pagecount API and therefore is likely included in this analysis.
+
+When looking at `wiki_timeseries.png` for the final timeseries plot, note that until late 2014, we do not have any mobile views so the Pagecount-All and Pagecount-Desktop lines overlap exactly. Also note the scale on the y-axis (which shows views on the order of 1E10) and the switch from dashed to solid lines representing the transition from the legacy Pagecount API to the Pageview API.
+
+
 <!-- DATA -->
 ## Data:
 
@@ -58,23 +67,17 @@ The raw data is contained in 5 JSON files formatted as follows:
 ### Processed Data:
 * Filename: `en-wikipedia_traffic_200712-202108.csv`
 * Data Structure:
-    |     Column              | Value        |
-    |-------------------------|--------------|
-    | year                    | YYYY         |
-    | month                   | MM           |
-    | pagecount_all_views     | num_views    |
-    | pagecount_desktop_views | num_views    |
-    | pagecount_mobile_views  | num_views    |
-    | pageview_all_views      | num_views    |
-    | pageview_desktop_views  | num_views    |
-    | pageview_mobile_views   | num_views    |
+    | Column                  | Value     | Description                                  |
+    |-------------------------|-----------|----------------------------------------------|
+    | year                    | YYYY      |                                              |
+    | month                   | MM        |                                              |
+    | pagecount_all_views     | num_views | All traffic data from the Pagecount API.     |
+    | pagecount_desktop_views | num_views | Desktop traffic data from the Pagecount API. |
+    | pagecount_mobile_views  | num_views | Mobile traffic data from the Pagecount API.  |
+    | pageview_all_views      | num_views | All traffic data from the Pageview API.      |
+    | pageview_desktop_views  | num_views | Desktop traffic data from the Pageview API.  |
+    | pageview_mobile_views   | num_views | Mobile traffic data from the Pageview API.   |
 
-<!-- SPECIAL CONSIDERATIONS -->
-## Special Considerations:
-
-Note that the data from the Pageview API is filtered to only include `user` data (i.e. eliminating "inorganic" traffic from spiders/crawlers). This option does not exist for the Pagecount API and therefore is likely included in this analysis.
-
-When looking at `wiki_timeseries.png` for the final timeseries plot, note that until late 2014, we do not have any mobile views so the Pagecount-All and Pagecount-Desktop lines overlap exactly. Also note the scale on the y-axis (which shows views on the order of 1E10) and the switch from dashed to solid lines representing the transition from the legacy Pagecount API to the Pageview API.
 
 <!-- LICENSE -->
 ## License:
