@@ -94,7 +94,7 @@ Project Link: [https://github.com/nriggio/data-512-a1](https://github.com/nriggi
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments:
+## Acknowledgements:
 
 * [A1: Data Curation Assignment](https://docs.google.com/document/d/1groRZyhgOwBxlSyE4vKEhYa-khKet8iWVaVDAgOH_Y4/edit#)
 * [Sample API Code](https://public.paws.wmcloud.org/User:Jtmorgan/data512_a1_example.ipynb)
