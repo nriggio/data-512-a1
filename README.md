@@ -3,7 +3,7 @@ Data 512: A1 - Data Curation
 
 <!-- ABOUT THE PROJECT -->
 ## About the Project:
-Construct, analyze, & publish a dataset of monthly traffic on English Wikipedia from January 1, 2008 - September 30, 2021.
+The goal of this project is to construct, analyze, & publish a dataset of monthly traffic on English Wikipedia from January 1, 2008 - September 30, 2021. This culminates in a timeseries visualization showing data across two relevant APIs (Legacy Pagecount & Pageview) and is broken down by traffic type (desktop, mobile, all).
 
 This project is meant to be fully reproducible by others, this includes all steps from acquiring the data to producing the png of the final timeseries.
 
@@ -20,7 +20,7 @@ This project is meant to be fully reproducible by others, this includes all step
 <!-- PROJECT STRUCTURE -->
 ## Project Structure:
 
-### Project Structure
+The raw & processed data is stored in the `data` directory (see Data header below for description), any processing or analysis is done in a jupyter notebook (`hcds-a1-data-curation.ipynb`), and the final timeseries plot is stored in `wiki_timeseries.png`.
 
 ```
 .
@@ -37,6 +37,28 @@ This project is meant to be fully reproducible by others, this includes all step
 └── wiki_timeseries.png
 ```
 
+<!-- DATA -->
+## Data:
+
+### Raw Data:
+
+The raw data is contained in 5 JSON files formatted as follows:
+* Filename: `apiname_accesstype_firstmonth-lastmonth.json`
+* Data Structure:
+    |     Column              | Value        |
+    |-------------------------|--------------|
+    | year                    | YYYY         |
+    | month                   | MM           |
+    | pagecount_all_views     | num_views    |
+    | pagecount_desktop_views | num_views    |
+    | pagecount_mobile_views  | num_views    |
+    | pageview_all_views      | num_views    |
+    | pageview_desktop_views  | num_views    |
+    | pageview_mobile_views   | num_views    |
+
+### Processed Data:
+* Filename: `en-wikipedia_traffic_200712-202108.csv`
+* Data Structure:
 
 <!-- LICENSE -->
 ## License:
@@ -63,20 +85,3 @@ Project Link: [https://github.com/nriggio/data-512-a1](https://github.com/nriggi
 * [MIT License](https://opensource.org/licenses/MIT)
 * [Best-README-Template: othneildrew](https://github.com/othneildrew/Best-README-Template)
 
-
-------------------------------
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
