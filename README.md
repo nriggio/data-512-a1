@@ -1,5 +1,4 @@
 # Monthly Traffic on English Wikipedia 
-## January 1, 2008 - September 30, 2021
 Data 512: A1 - Data Curation
 
 <!-- ABOUT THE PROJECT -->
@@ -9,7 +8,7 @@ Construct, analyze, & publish a dataset of monthly traffic on English Wikipedia 
 This project is meant to be fully reproducible by others, this includes all steps from acquiring the data to producing the png of the final timeseries.
 
 <!-- PREREQUISITES -->
-### Prerequisites:
+## Prerequisites:
 
 * pandas
 * numpy
