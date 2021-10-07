@@ -1,4 +1,5 @@
-# Monthly Traffic on English Wikipedia (January 1, 2008 - September 30, 2021
+# Monthly Traffic on English Wikipedia 
+## January 1, 2008 - September 30, 2021
 Data 512: A1 - Data Curation
 
 <!-- ABOUT THE PROJECT -->
@@ -61,7 +62,7 @@ Project Link: [https://github.com/nriggio/data-512-a1](https://github.com/nriggi
 * [Wikimedia Legacy Pagecount API](https://wikimedia.org/api/rest_v1/#/Legacy%20data/get_metrics_legacy_pagecounts_aggregate__project___access_site___granularity___start___end_)
 * [Wikimedia Pageview API](https://wikimedia.org/api/rest_v1/#/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end)
 * [MIT License](https://opensource.org/licenses/MIT)
-* [othneildrew's Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* [Best-README-Template: othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 
 ------------------------------
