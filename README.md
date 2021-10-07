@@ -96,8 +96,10 @@ Project Link: [https://github.com/nriggio/data-512-a1](https://github.com/nriggi
 * [A1: Data Curation Assignment](https://docs.google.com/document/d/1groRZyhgOwBxlSyE4vKEhYa-khKet8iWVaVDAgOH_Y4/edit#)
 * [Sample API Code](https://public.paws.wmcloud.org/User:Jtmorgan/data512_a1_example.ipynb)
 * [Wikimedia REST API Documentation](https://www.mediawiki.org/wiki/Wikimedia_REST_API)
-* [Wikimedia Legacy Pagecount API](https://wikimedia.org/api/rest_v1/#/Legacy%20data/get_metrics_legacy_pagecounts_aggregate__project___access_site___granularity___start___end_)
-* [Wikimedia Pageview API](https://wikimedia.org/api/rest_v1/#/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end)
+* [Legacy Pagecount API Endpoint](https://wikimedia.org/api/rest_v1/#/Legacy%20data/get_metrics_legacy_pagecounts_aggregate__project___access_site___granularity___start___end_)
+* [Pageview API Endpoint](https://wikimedia.org/api/rest_v1/#/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end)
+* [Legacy Pagecount API Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts)
+* [Pageview API Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
 * [MIT License](https://opensource.org/licenses/MIT)
 * [Best-README-Template: othneildrew](https://github.com/othneildrew/Best-README-Template)
 
