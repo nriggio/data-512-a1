@@ -47,7 +47,7 @@ The raw data is contained in 5 JSON files formatted as follows:
 * Data Structure:
     |     Column         | Value                                   | Description |
     |--------------------|-----------------------------------------|-------------|
-    | project            | en.wikipedia                            |             |
+    | project            | en.wikipedia                            | Represents the Wikimedia project we are viewing. In this case all data is from English Wikipedia.            |
     | access/access-site | desktop, mobile, mobile-web, mobile-app |             |
     | agent              | user                                    |             |
     | granularity        | monthly                                 |             |
